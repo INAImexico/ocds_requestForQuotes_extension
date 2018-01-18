@@ -1,0 +1,168 @@
+{
+  "definitions": {
+    "RequestForQuotes": {
+      "title": "Request for quotes",
+      "description": "A request for quotes (RFQ) is a type of procurement solicitation in which a buyer asks invited suppliers to offer an estimated price for particular goods or services.",
+      "type": "object",
+      "properties": {
+        "id": {
+          "title": "Request ID",
+          "description": "A local identifier for this request, unique within this block.",
+          "type": [
+            "string",
+            "integer"
+          ]
+        },
+        "title": {
+          "title": "Title",
+          "description": "The request for quotes title.",
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "description": {
+          "title": "Description",
+          "description": "The text sent to the invited suppliers in order to participate in the quotation process. ",
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "period": {
+          "title": "Period to receive quotes",
+          "description": "The period between the date when the request for quotes was made and the end date to receive the quotes.    ",
+          "type": "object",
+          "items": {
+            "$ref": "#/definitions/Period"
+          }
+        },
+        "items": {
+          "title": "Items to be quoted",
+          "description": "The goods and services to be quoted, broken into line items wherever possible. Items should not be duplicated, but a quantity of 2 specified instead.",
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/Item"
+          }
+        },
+        "invitedSuppliers": {
+          "title": "Invited suppliers",
+          "description": "A list of invited suppliers asked to send quotes.",
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/OrganizationReference"
+          }
+        },
+        "quotes": {
+          "title": "Quotes",
+          "description": "A list of quotes received from invited suppliers.",
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/Quote"
+          }
+        }
+      },
+      "patternProperties": {
+        "^(name_(((([A-Za-z]{2,3}(-([A-Za-z]{3}(-[A-Za-z]{3}){0,2}))?)|[A-Za-z]{4}|[A-Za-z]{5,8})(-([A-Za-z]{4}))?(-([A-Za-z]{2}|[0-9]{3}))?(-([A-Za-z0-9]{5,8}|[0-9][A-Za-z0-9]{3}))*(-([0-9A-WY-Za-wy-z](-[A-Za-z0-9]{2,8})+))*(-(x(-[A-Za-z0-9]{1,8})+))?)|(x(-[A-Za-z0-9]{1,8})+)))$": {
+          "type": [
+            "string",
+            "null"
+          ]
+        }
+      }
+    },
+    "Quote": {
+      "title": "Quote",
+      "type": "object",
+      "description": "A quote is a fixed price offered by a invited supplier for particular goods or services.",
+      "properties": {
+        "id": {
+          "title": "Quote ID",
+          "description": "A local identifier for this quote, unique within this block.",
+          "type": [
+            "string",
+            "integer"
+          ],
+          "minLength": 1
+        },
+        "description": {
+          "title": "Description",
+          "description": "Quote description. Terms and conditions for the quote.",
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "date": {
+          "title": "Quote date",
+          "description": "The date of the quote. This is the date when the quote was received.",
+          "type": [
+            "string",
+            "null"
+          ],
+          "format": "date-time"
+        },
+        "items": {
+          "title": "Items quoted",
+          "description": "The goods and services quoted, broken into line items wherever possible. Items should not be duplicated, but a quantity of 2 specified instead.",
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/Item"
+          }
+        },
+        "value": {
+          "title": "Quote value",
+          "description": "The total value of this quote. ",
+          "type": "object",
+          "items": {
+            "$ref": "#/definitions/Value"
+          }
+        },
+        "quotePeriod": {
+          "title": "Quote period",
+          "description": "The period on which this quote is valid.    ",
+          "type": "object",
+          "items": {
+            "$ref": "#/definitions/Period"
+          }
+        },
+        "issuingSupplier": {
+          "title": "Issuing supplier",
+          "description": "The supplier that sent a quote.",
+          "type": "object",
+          "items": {
+            "$ref": "#/definitions/OrganizationReference"
+          }
+        }
+      },
+      "patternProperties": {
+        "^(description_(((([A-Za-z]{2,3}(-([A-Za-z]{3}(-[A-Za-z]{3}){0,2}))?)|[A-Za-z]{4}|[A-Za-z]{5,8})(-([A-Za-z]{4}))?(-([A-Za-z]{2}|[0-9]{3}))?(-([A-Za-z0-9]{5,8}|[0-9][A-Za-z0-9]{3}))*(-([0-9A-WY-Za-wy-z](-[A-Za-z0-9]{2,8})+))*(-(x(-[A-Za-z0-9]{1,8})+))?)|(x(-[A-Za-z0-9]{1,8})+)))$": {
+          "type": [
+            "string",
+            "null"
+          ]
+        }
+      }
+    },
+    "Planning": {
+      "properties": {
+        "hasQuotes": {
+          "title": "Has quotes?",
+          "description": "A true/false field to indicate whether any quotes were received during the planning process.",
+          "type": [
+            "boolean",
+            "null"
+          ]
+        },
+        "requestsForQuotes": {
+          "title": "Requests for quotes",
+          "description": "A list of requests for quotes related to the planning process.",
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/RequestForQuotes"
+          }
+        }
+      }
+    }
+  }
+}
