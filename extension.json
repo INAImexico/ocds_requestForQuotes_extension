@@ -1,0 +1,14 @@
+{
+  "name": {
+    "en": "ocds_requestForQuotes_extension"
+  },
+  "description": {
+    "en": "In Mexico, before starting a contracting process, it's mandatory to make quotes (among at least three possible suppliers) when the contract is meant to be awarded to a single supplier without competition. However, it is also possible to make these quotations in others procurement methods. The request for quotations is a process that is done in the planning stage before publishing any notice. See discussion in https://github.com/open-contracting/standard/issues/599"
+  },
+  "documentationUrl": {
+    "en": "https://github.com/INAImexico/ocds_requestForQuotes_extension"
+  },
+  "codelists": [
+    "+partyRole.csv",
+  ]
+}
