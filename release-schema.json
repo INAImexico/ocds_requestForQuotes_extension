@@ -23,7 +23,7 @@
         },
         "description": {
           "title": "Description",
-          "description": "The text sent to the invited suppliers in order to participate in the quotation process. ",
+          "description": "The text sent to the invited suppliers in order to participate in the quotation process.",
           "type": [
             "string",
             "null"
@@ -31,7 +31,7 @@
         },
         "period": {
           "title": "Period to receive quotes",
-          "description": "The period between the date when the request for quotes was made and the end date to receive the quotes.    ",
+          "description": "The period between the date when the request for quotes was made and the end date to receive the quotes.",
           "type": "object",
           "items": {
             "$ref": "#/definitions/Period"
@@ -112,7 +112,7 @@
         },
         "value": {
           "title": "Quote value",
-          "description": "The total value of this quote. ",
+          "description": "The total value of this quote.",
           "type": "object",
           "items": {
             "$ref": "#/definitions/Value"
@@ -120,7 +120,7 @@
         },
         "quotePeriod": {
           "title": "Quote period",
-          "description": "The period on which this quote is valid.    ",
+          "description": "The period on which this quote is valid.",
           "type": "object",
           "items": {
             "$ref": "#/definitions/Period"
