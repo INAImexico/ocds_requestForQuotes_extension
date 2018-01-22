@@ -9,7 +9,6 @@ Amount of the quotations.
 Field yes / no to indicate if quotes are made in the procurement process.
 Thus, with the aim of match the Open Contracting Data Standard (OCDS) with the transparency obligations in Mexico, and therefore, with the Transparency Obligations Portals System (SIPOT) administered by the National Institute of Transparency, Access to Information and Protection of Personal Data (INAI), we consider necessary to develop an extension that includes the information related to the quotation process.
 In this context, the Public Service Secretariat (SFP) considers the inclusion of additional attributes to those established by the regulations in transparency, since the CompraNet system consider the generation of other information that can serve as a basis for a better understanding of the quotations processes.
-Specifically, the data that can be obtained from the CompraNet system are the following.
 
 ## Proposal:
 
