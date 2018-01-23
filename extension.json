@@ -5,6 +5,9 @@
   "description": {
     "en": "A request for quotes (RFQ) is a type of procurement solicitation in which a buyer asks invited suppliers to offer an estimated price for particular goods or services. See discussion in https://github.com/open-contracting/standard/issues/599"
   },
+  "compatibility": [
+    "1.1"
+  ],
   "documentationUrl": {
     "en": "https://github.com/INAImexico/ocds_requestForQuotes_extension"
   },
