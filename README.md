@@ -55,11 +55,11 @@ Add an array to the planning object. This array must contain the following attri
 ## Defining texts:
 
 
-**Cod** | **Title** | **Description**
+**Code** | **Title** | **Description**
 --|--|--
 hasQuotes | Has quotes? | A true/false field to indicate whether any quotes were received during the planning process.
 requestsForQuotes | Requests for quotes | A list of requests for quotes related to the planning process.
-requestForQuotes | Request for quotes | A request for quotes (RFQ) is a type of procurement solicitation in which a buyer asks invited suppliers to offer an estimated price for particular goods or services.
+RequestForQuotes | Request for quotes | A request for quotes (RFQ) is a type of procurement solicitation in which a buyer asks invited suppliers to offer an estimated price for particular goods or services.
 id | Request ID | A local identifier for this request, unique within this block.
 title | Title | The request for quotes title.
 description | Description | The text sent to the invited suppliers in order to participate in the quotation process.
@@ -67,7 +67,7 @@ period | Period to receive quotes | The period between the date when the request
 invitedSuppliers | Invited suppliers | A list of invited suppliers asked to send quotes.
 items | Items to be quoted | The goods and services to be quoted, broken into line items wherever possible. Items should not be duplicated, but a quantity of 2 specified instead.
 quotes | Quotes | A list of quotes received from invited suppliers.
-quotes | Quote | A quote is a fixed price offered by a invited supplier for particular goods or services.
+Quote | Quote | A quote is a fixed price offered by a invited supplier for particular goods or services.
 id | Quote ID | A local identifier for this quote, unique within this block.
 description | Description | Quote description. Terms and conditions for the quote.
 date | Quote date | The date of the quote. This is the date when the quote was received.
