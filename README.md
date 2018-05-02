@@ -27,7 +27,7 @@ Add an array to the planning object. This array must contain the following attri
 - Planning {object} 
   - hasQuotes (boolean, null)
   - requestsForQuotes [array]
-    - requestForQuotes {object}
+    - RequestForQuotes {object}
       - id (string, integer)
       - title (string, null)
       - description (string, null)
