@@ -4,6 +4,9 @@
       "title": "Request for quotes",
       "description": "A request for quotes (RFQ) is a type of procurement solicitation in which a buyer asks invited suppliers to offer an estimated price for particular goods or services.",
       "type": "object",
+      "required": [
+        "id"
+      ],
       "properties": {
         "id": {
           "title": "Request ID",
@@ -72,6 +75,9 @@
       "title": "Quote",
       "type": "object",
       "description": "A quote is a fixed price offered by a invited supplier for particular goods or services.",
+      "required": [
+        "id"
+      ],
       "properties": {
         "id": {
           "title": "Quote ID",
