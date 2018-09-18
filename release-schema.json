@@ -4,6 +4,9 @@
       "title": "Request for quotes",
       "description": "A request for quotes (RFQ) is a type of procurement solicitation in which a buyer asks invited suppliers to offer an estimated price for particular goods or services.",
       "type": "object",
+      "required": [
+        "id"
+      ],
       "properties": {
         "id": {
           "title": "Request ID",
@@ -32,10 +35,7 @@
         "period": {
           "title": "Period to receive quotes",
           "description": "The period between the date when the request for quotes was made and the end date to receive the quotes.",
-          "type": "object",
-          "items": {
-            "$ref": "#/definitions/Period"
-          }
+          "$ref": "#/definitions/Period"
         },
         "items": {
           "title": "Items to be quoted",
@@ -75,6 +75,9 @@
       "title": "Quote",
       "type": "object",
       "description": "A quote is a fixed price offered by a invited supplier for particular goods or services.",
+      "required": [
+        "id"
+      ],
       "properties": {
         "id": {
           "title": "Quote ID",
@@ -113,26 +116,17 @@
         "value": {
           "title": "Quote value",
           "description": "The total value of this quote.",
-          "type": "object",
-          "items": {
-            "$ref": "#/definitions/Value"
-          }
+          "$ref": "#/definitions/Value"
         },
         "quotePeriod": {
           "title": "Quote period",
           "description": "The period on which this quote is valid.",
-          "type": "object",
-          "items": {
-            "$ref": "#/definitions/Period"
-          }
+          "$ref": "#/definitions/Period"
         },
         "issuingSupplier": {
           "title": "Issuing supplier",
           "description": "The supplier that sent a quote.",
-          "type": "object",
-          "items": {
-            "$ref": "#/definitions/OrganizationReference"
-          }
+          "$ref": "#/definitions/OrganizationReference"
         }
       },
       "patternProperties": {

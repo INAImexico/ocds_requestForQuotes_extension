@@ -12,6 +12,9 @@
     "en": "https://github.com/INAImexico/ocds_requestForQuotes_extension"
   },
   "codelists": [
-    "+partyRole.csv",
+    "+partyRole.csv"
+  ],
+  "schemas": [
+    "release-schema.json"
   ]
 }

@@ -1,3 +1,3 @@
-Category,Code,Title_en,Description_en,Source
-,invitedSupplier,Invited supplier,The invited supplier asked to send a quote.,
-,issuingSupplier,Issuing supplier,The supplier that sent a quote.,
+Code,Title,Description
+invitedSupplier,Invited supplier,The invited supplier asked to send a quote.
+issuingSupplier,Issuing supplier,The supplier that sent a quote.
