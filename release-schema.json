@@ -118,7 +118,7 @@
           "description": "The total value of this quote.",
           "$ref": "#/definitions/Value"
         },
-        "quotePeriod": {
+        "period": {
           "title": "Quote period",
           "description": "The period on which this quote is valid.",
           "$ref": "#/definitions/Period"
