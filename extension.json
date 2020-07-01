@@ -9,7 +9,7 @@
     "1.1"
   ],
   "documentationUrl": {
-    "en": "https://github.com/INAImexico/ocds_requestForQuotes_extension"
+    "en": "https://github.com/contratacionesabiertas/ocds_requestForQuotes_extension"
   },
   "codelists": [
     "+partyRole.csv"
